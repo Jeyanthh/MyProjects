@@ -1,0 +1,3 @@
+transfer.txt 10.1.10.29
+duplicate.txt 10.1.10.29 10.1.10.25
+c.txt 10.0.0.32

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.projectazure.hibernate.beans">
+
+	<class name="LoyaltyPoints" table="LOYALTYPOINTS">
+		<id name="loyaltyPointsId" column="LOYALTYPOINTSID">
+			<generator class="increment" />
+		</id>
+
+		<property name="customerId" column="CUSTOMERID" type="int" />
+		<property name="loyaltyPoints" column="LOYALTYPOINTS" type="int" />
+		<property name="achievedBy" column="ACHIEVEDBY" type="java.lang.String" />
+		<property name="achievedDate" column="ACHIEVEDDATE" type="date" />
+		<property name="expiryDate" column="EXPIRYDATE" type="date" />
+
+
+	</class>
+</hibernate-mapping>

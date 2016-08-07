@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name="com.projectazure.hibernate.beans.TourPackage" table="TourPackage">
+      <id name="packageId" type="int" column="packageId">
+         <generator class="sequence">
+         <param name="sequence">TourPackage_seq</param></generator>
+      </id>
+      <property name="packageName" column="packageName" type="java.lang.String"/>
+      <property name="packageType" column="packageType" type="java.lang.String"/>
+      
+      <property name="location" column="packagePlace" type="java.lang.String "/>
+       <property name="pricePerHead" column="pricePerHead" type="java.lang.String"/>
+   </class>
+</hibernate-mapping>

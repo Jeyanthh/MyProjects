@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE tiles-definitions PUBLIC       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+	<definition name="template1" template="/pages/tiles/layout/layout1.jsp">
+		<put-attribute name="header"
+			value="/pages/tiles/template/template1/header.jsp" />
+		<put-attribute name="footer"
+			value="/pages/tiles/template/template1/footer.jsp" />
+		<put-attribute name="menu"
+			value="/pages/tiles/template/template1/menu.jsp" />
+	</definition>
+
+	<definition name="template2" template="/pages/tiles/layout/layout2.jsp">
+		<put-attribute name="header"
+			value="/pages/tiles/template/template2/header.jsp" />
+		<put-attribute name="footer"
+			value="/pages/tiles/template/template2/footer.jsp" />		<put-attribute name="menu"
+			value="/pages/tiles/template/template2/menu.jsp" />
+	</definition>
+
+	<definition name="currentlayout" extends="template1">
+	</definition>
+
+	<definition name="cherryHome.page" extends="currentlayout">
+		<put-attribute name="body" value="/pages/home/college-home.jsp" />
+	</definition>
+				
+						<!-- Login Page Success -->
+	<definition name="login.page" extends="currentlayout">
+		<put-attribute name="body" value="/pages/module1/viewcollege-form-body.jsp" />
+	</definition>
+	
+	
+	<definition name="signUp.page" extends="currentlayout">
+		<put-attribute name="body" value="/pages/module1/signup-form-body.jsp" />
+	</definition>
+	
+		<definition name="changePassword.page" extends="currentlayout">
+		<put-attribute name="body" value="/pages/module1/changepassword-form-body.jsp" />
+	</definition>
+	
+			<definition name="roomService.page" extends="currentlayout">
+		<put-attribute name="body" value="/pages/module2/roomService-form-body.jsp" />
+	</definition>
+		
+		<definition name="inService.page" extends="currentlayout">
+		<put-attribute name="body" value="/pages/module2/inService-form-body.jsp" />
+	</definition>
+	
+	<definition name="addService.page" extends="currentlayout">
+		<put-attribute name="body" value="/pages/module2/addService-form-body.jsp" />
+	</definition>
+	
+	
+	<definition name="addCollege.page" extends="currentlayout">
+		<put-attribute name="body"
+			value="/pages/module1/addcollege-form-body.jsp" />
+	</definition>
+
+	<definition name="viewCollege.page" extends="currentlayout">
+		<put-attribute name="body"
+			value="/pages/module1/viewcollege-form-body.jsp" />
+	</definition>
+
+	<definition name="editCollege.page" extends="currentlayout">
+		<put-attribute name="body"
+			value="/pages/module1/editcollege-form-body.jsp" />
+	</definition>
+
+	<definition name="updateCollege.page" extends="currentlayout">
+		<put-attribute name="body"
+			value="/pages/module1/updatecollege-form-body.jsp" />
+	</definition>
+
+	<definition name="deleteCollege.page" extends="currentlayout">
+		<put-attribute name="body"
+			value="/pages/module1/deletecollege-form-body.jsp" />
+	</definition>
+
+	<definition name="success.page" extends="currentlayout">
+		<put-attribute name="body" value="/pages/messages/success.jsp" />
+	</definition>
+
+	<definition name="failure.page" extends="currentlayout">
+		<put-attribute name="body" value="/pages/messages/failure.jsp" />
+	</definition>
+<definition name="bookTourPackage.page" extends="currentlayout">
+		<put-attribute name="body" value="/pages/module3/customer/pages/BookTourPackage.jsp" />
+	</definition>
+	<definition name="AddTourPackage.page" extends="currentlayout">
+		<put-attribute name="body"
+			value="/pages/module3/admin/pages/AddTourPackage.jsp" />
+	</definition>
+	<definition name="AllTourPackage.page" extends="currentlayout">
+		<put-attribute name="body"
+			value="/pages/module3/admin/pages/ViewTourPackage.jsp" />
+	</definition>
+	<definition name="EditLoyaltyPoints.page" extends="currentlayout">
+		<put-attribute name="body"
+			value="/pages/module3/admin/pages/EditLoyaltyPoints.jsp" />
+	</definition>
+	
+	<definition name="ViewUserPackage.page" extends="currentlayout">
+		<put-attribute name="body"
+			value="/pages/module3/customer/pages/ViewBookedTourPackages.jsp" />
+	</definition>
+	<definition name="bookingConfirm.page" extends="currentlayout">
+		<put-attribute name="body"
+			value="/pages/module3/clerk/pages/ConfirmRequest.jsp" />
+	</definition>
+	<definition name="updateFormPage.page" extends="currentlayout">
+		<put-attribute name="body"
+			value="/pages/module3/admin/pages/EditTourPackage.jsp" />
+	</definition>
+	
+	<definition name="AllLoyaltyPoints.page" extends="currentlayout">
+		<put-attribute name="body"
+			value="/pages/module3/admin/pages/ViewLoyaltyPoints.jsp" />
+	</definition>
+	
+		<definition name="viewUpdateLoyaltyPoints.page" extends="currentlayout">
+		<put-attribute name="body"
+			value="/pages/module3/admin/pages/UpdateLoyaltyPoints.jsp" />
+	</definition>
+   <definition name="addVehicle.page" extends="currentlayout">
+		<put-attribute name="body"
+			value="/pages/module3/admin/pages/AddVehicle.jsp" />
+	</definition>
+	 <definition name="transport.page" extends="currentlayout">
+		<put-attribute name="body"
+			value="/pages/module3/admin/pages/ViewVehicle.jsp" />
+	</definition>
+	 <definition name="result.page" extends="currentlayout">
+		<put-attribute name="body"
+			value="/pages/module3/admin/pages/TransportView.jsp" />
+	</definition>
+	 <definition name="updateVehicle.page" extends="currentlayout">
+		<put-attribute name="body"
+			value="/pages/module3/admin/pages/updateVehicle.jsp" />
+	</definition>
+	 <definition name="deleteDealer.page" extends="currentlayout">
+		<put-attribute name="body"
+			value="/pages/module3/admin/pages/DeleteVehicle.jsp" />
+	</definition>
+	
+	 <definition name="addDealer.page" extends="currentlayout">
+		<put-attribute name="body"
+			value="/pages/module3/admin/pages/AddDealer.jsp" />
+	</definition>
+	<definition name="vehicleView.page" extends="currentlayout">
+		<put-attribute name="body"
+			value="/pages/module3/admin/pages/ViewVehicle.jsp" />
+	</definition>
+	
+	
+	<definition name="dealer.page" extends="currentlayout">
+		<put-attribute name="body"
+			value="/pages/module3/admin/pages/ViewDealer.jsp" />
+			</definition>
+			<definition name="updateDealers.page" extends="currentlayout">
+		<put-attribute name="body"
+			value="/pages/module3/admin/pages/UpdateDealer.jsp" />
+	</definition>
+	<definition name="allocateVehicle.page" extends="currentlayout">
+		<put-attribute name="body"
+			value="/pages/module3/clerk/pages/ViewAllocation.jsp" />
+			</definition>
+	
+</tiles-definitions>

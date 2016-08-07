@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="dialect">org.hibernate.dialect.OracleDialect</property>
+		<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+		<property name="hibernate.connection.url">jdbc:oracle:thin:@172.24.137.30:1521:Ora10G</property>
+		<property name="hibernate.connection.username">e734294</property>
+		<property name="hibernate.connection.password">E734294</property>
+		<property name="hibernate.connection.pool_size">10</property>
+		<property name="show_sql">true</property>
+
+		<property name="hibernate.hbm2ddl.auto">validate</property>
+		<!-- Mapping files --> 
+		<!-- <mapping class="com.projectazure.hibernate.beans.TourPackage" />
+		<mapping class="com.projectazure.hibernate.beans.VehicleBean" /> -->
+		<mapping class="com.projectazure.hibernate.beans.TourBooking" />
+		
+		<!-- 
+		<mapping resource="TourPackage.hbm.xml"/>
+		 -->
+	</session-factory>
+	</hibernate-configuration>

@@ -1,0 +1,79 @@
+@CHARSET "ISO-8859-1";
+#wholepage
+{
+	
+	width:100%;
+	height:600px;
+}
+#topportion
+{
+	
+	width:100%;
+	height:400px;
+}
+#bottomportion
+{
+	background-color: blue;
+	width:100%;
+	height:400px;
+}
+#topleft{
+	
+	width:70%;
+	height:400px;
+	float: left;
+}
+#topright{
+	
+	width:20%;
+	height:400px;
+	float: right;
+	}
+#bottomleft{
+	background-color:lime; ;
+	width:80%;
+	height:400px;
+	float: left;
+}
+#bottomright{
+	background-color: green;
+	width:20%;
+	height:400px;
+	float: right;
+	}
+	#field{
+	width: 70%; 
+	border-radius:25px;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-left: 20%;
+
+	}
+	#textbox
+	{
+	
+	border:2px solid #456879;
+	border-radius:10px;
+	height: 22px;
+	width: 230px;
+	}
+	#formbutton
+	{
+	
+	background-color: #db6600;
+	padding-left:6px;
+	padding-right:6px;
+	padding-top:3px;
+	padding-bottom:3px;	
+	color: #ffffff;
+	border:1px solid #db6600;
+	background-image: url(images/button_bg.jpg);
+}
+#formbutton:hover {
+	background-color: #000000;	
+	border:1px solid #000000;
+	background-image: url(images/button_bg_over.jpg);
+}
+	
+
+	
